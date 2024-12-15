@@ -1,4 +1,65 @@
 site_name: aleiann.one
+site_description: My personal knowledge garden
+site_author: Alessandro Iannone
 site_url: https://aleiann.one
+
+# -- Urls --
+repo_name: aleiann.one
+repo_url: https://github.com/aleianno90/aleiann.one
+
+# -- Theme --
 theme:
   name: material
+  # logo: assets/jakala_logo.png
+  # favicon: assets/jakala_logo.png
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+  # view and edit content buttons
+  - content.action.view
+  - content.action.edit
+  # footer
+  - navigation.footer
+  # track navigation (section is updated in url)
+  - navigation.tracking
+  # add breadcrumb navigation at the top of the page
+  - navigation.path
+  # Add indexes to the sections in sidebar
+  - navigation.indexes
+  # follow user position scrolling sidebar
+  - toc.follow
+  # search suggestion and highlight
+  - search.suggest
+  - search.highlight
+  - search.share
+
+# -- Navigation --
+docs_dir: docs
+nav:
+  - Home: index.md
+  - Pages:
+    - docs/pages/index.md # section index
+
+# -- Ext and plugins --
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - codehilite
+  - footnotes
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - tags:
+      tags_file: tags.md
+
+extra:
+  generator: false
