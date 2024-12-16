@@ -3,10 +3,6 @@ site_description: My personal knowledge garden
 site_author: Alessandro Iannone
 site_url: https://aleiann.one
 
-# -- Urls --
-repo_name: aleiann.one
-repo_url: https://github.com/aleianno90/aleiann.one
-
 # -- Theme --
 theme:
   name: material
