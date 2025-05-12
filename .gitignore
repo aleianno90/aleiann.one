@@ -2,5 +2,8 @@
 .idea
 __pycache__
 *.pyc
-
-
+utils
+data
+output
+.vscode
+.DS_Store

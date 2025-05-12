@@ -6,17 +6,19 @@ site_url: https://aleiann.one
 # -- Theme --
 theme:
   name: material
+  font:
+    text: Lobster
   # logo: assets/jakala_logo.png
   # favicon: assets/jakala_logo.png
   palette:
-    - scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+  - scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
   features:
   # view and edit content buttons
   - content.action.view
@@ -39,23 +41,23 @@ theme:
 # -- Navigation --
 docs_dir: docs
 nav:
-  - Home: index.md
-  - Pages:
-    - docs/pages/index.md # section index
+- Home: index.md
+- Pages:
+  - docs/pages/index.md # section index
 
 # -- Ext and plugins --
 markdown_extensions:
-  - pymdownx.highlight
-  - pymdownx.superfences
-  - codehilite
-  - footnotes
-  - toc:
-      permalink: true
+- pymdownx.highlight
+- pymdownx.superfences
+- codehilite
+- footnotes
+- toc:
+    permalink: true
 
 plugins:
-  - search
-  - tags:
-      tags_file: tags.md
+- search
+- tags:
+    tags_file: tags.md
 
 extra:
   generator: false
